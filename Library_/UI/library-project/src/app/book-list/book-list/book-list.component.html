@@ -1,0 +1,53 @@
+<div class="getBookOrder">
+  <button (click)="GetAllBooks()">All</button>
+  <button (click)="GetRecomendedBooks()">Recomended</button>
+</div>
+
+
+<div id="GetAllBooks" class="booksContainer">
+  <div class="bookBlock" *ngFor="let book of books">
+    <img class="bookBLockImage" src="{{ book.Cover }}">
+    <div class="block_with_main_info">
+      <div class="title_reviews_block">
+        <p class="bookTitle">{{ book.Title }}</p>
+        <div class="bookBlockButton">
+          <p> Review: {{ book.reviewNumber }}</p>
+          <p>Rating: {{ book.Rating }} </p>
+        </div>
+      </div>
+      <div class="bookButton">
+        <button (click)="openDialog(book.Id)">
+          <mat-icon>remove_red_eye</mat-icon>
+        </button>
+        <button (click)="getBookId(book.Id)">
+          <mat-icon>create</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="GetRecomendedBooks" class="booksContainer" style="display: none;">
+  <div class="bookBlock" *ngFor="let book of recomendetBooks">
+    <img class="bookBLockImage" src="{{ book.Cover }}">
+    <div class="block_with_main_info">
+      <div class="title_reviews_block">
+        <p class="bookTitle">{{ book.Title }}</p>
+        <div class="bookBlockButton">
+          <p> Review: {{ book.reviewNumber }}</p>
+          <p>Rating: {{ book.Rating }} </p>
+        </div>
+      </div>
+      <div class="bookButton">
+        <button (click)="openDialog(book.Id)">
+          <mat-icon>remove_red_eye</mat-icon>
+        </button>
+        <button (click)="getBookId(book.Id)">
+          <mat-icon>create</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

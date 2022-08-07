@@ -1,0 +1,14 @@
+.container{
+  margin: 20px 10%;
+}
+
+.editComponent{
+  background-color: rgb(165, 167, 170);
+  height: 42vh;
+}
+
+.bookListComponent{
+  margin-bottom: 2%;
+  height: 20vh;
+}
+

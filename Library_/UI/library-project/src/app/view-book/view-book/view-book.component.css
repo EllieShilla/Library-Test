@@ -1,0 +1,47 @@
+.mat-dialog-content{
+  width: 600px;
+  height: 700px;
+}
+
+.detail{
+  font-size: 25px;
+}
+
+.headerDialog{
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.headerDialog button{
+  width: 35px;
+  height: 35px;
+  border: 0;
+  background-color: transparent;
+}
+
+.headerDialog button:hover{
+  cursor: pointer;
+}
+
+.headerDialog p{
+  text-align: center;
+}
+
+.modelContent{
+  height: 200px;width:
+  300px; overflow-x: auto;
+}
+
+.modelBookP{
+  font-size: 15px;
+}
+
+.modelTitle{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modelCover{
+  width: 250px;
+  margin-right: 20px;
+}

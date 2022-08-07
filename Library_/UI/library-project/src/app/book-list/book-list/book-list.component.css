@@ -1,0 +1,87 @@
+.booksContainer {
+  background-color: darkgray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+
+  height: 270px;
+  overflow-x: auto;
+}
+
+.bookBlock {
+  width: 580px;
+  margin-top: 10px;
+  background-color: rgb(248, 248, 248);
+  height: 120px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.bookTitle {
+  text-align: left;
+}
+
+.bookBLockImage {
+  margin-left: 15px;
+  margin-top: 10px;
+  float: left;
+  height: 100px;
+  border-radius: 3px;
+}
+
+.bookButton{
+  margin-right: 15px;
+}
+
+.bookButton button {
+  width: 35px;
+  height: 35px;
+  padding: 2px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.bookButton button:hover {
+  cursor: pointer;
+}
+
+.title_reviews_block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 25px;
+  margin-top: 10px;
+  width: 250px;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+
+.bookBlockButton {
+  display: inline-flex;
+  margin-bottom: auto;
+}
+
+.bookBlockButton p {
+  margin-right: 10px;
+}
+
+.block_with_main_info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.getBookOrder {
+  margin-left: 20px;
+}
+.getBookOrder button{
+  width: 100px;
+  height: 40px;
+  border: 0;
+}
+
+.getBookOrder button:hover{
+  cursor: pointer;
+  background-color: rgb(165, 167, 170);
+}

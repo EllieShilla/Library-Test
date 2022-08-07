@@ -1,0 +1,26 @@
+<p id="detail">Details</p>
+<mat-dialog-content>
+  <div>
+    <div *ngFor="let book of bookDetail">
+      <div style="float: left;">
+        <img class="modelCover" src="{{ book.Cover }}">
+        <p class="modelBookP">Rating: {{ book.Rating }} Reviews: {{ book.Reviews.length }}</p>
+      </div>
+      <div style="margin-left: 50px;">
+        <p class="modelTitle">{{ book.Title }}</p>
+        <p class="modelBookP">{{ book.Author }}, {{ book.Genre }}</p>
+        <p class="modelContent" >{{ book.Content }}</p>
+      </div>
+
+      <ul *ngFor="let review of book.Reviews">
+        <hr>
+        <p>{{ review.Reviwer }} </p>
+        <p>{{ review.Message }} </p>
+      </ul>
+    </div>
+
+  </div>
+</mat-dialog-content>
+<button (click)="onClose()">
+  Close
+</button>

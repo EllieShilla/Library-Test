@@ -1,0 +1,53 @@
+
+<p id="formLabel" value="Add Book">Add Book</p>
+<form [formGroup]="bookForm" class="editForm">
+  <div class="allInput">
+    <div>
+      <div class="divForm">
+
+        <label for="title">Title</label><br>
+
+        <input id="title" type="text" formControlName="title" class="form-control" ngModel>
+
+      </div>
+      <div class="divForm">
+
+        <label for="cover">Cover</label><br>
+
+        <input id="cover" type="file" formControlName="cover" class="form-control" (change)='uploadSingleFile($event)'
+          ngModel>
+
+      </div>
+      <div class="divForm">
+
+        <label for="genre">Genre</label><br>
+
+        <input id="genre" type="text" formControlName="genre" class="form-control" ngModel>
+
+      </div>
+      <div class="divForm">
+
+        <label for="author">Author</label><br>
+
+        <input id="author" type="text" formControlName="author" class="form-control" ngModel>
+
+      </div>
+    </div>
+
+    <div class="divForm">
+
+      <label for="content">Content</label><br>
+
+      <textarea  id="content" type="text" formControlName="content" class="form-control" ngModel></textarea>
+
+    </div>
+  </div>
+  <div class="buttonForm">
+    <button (click)="AddBook()" type="submit" id="addBookButton">Add</button>
+    <button (click)="updateBook()" type="submit" id="updateBookButton" style="display: none;">Edit</button>
+    <button (click)="Clear()">Clear</button>
+  </div>
+
+</form>
+
+
